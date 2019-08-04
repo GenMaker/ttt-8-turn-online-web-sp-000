@@ -18,7 +18,7 @@ def move(board,index,character = "X")
 end
 #valid_move
 def valid_move?(board, index)
-       index.between?(0, 8) && !(board[index] == 'X' || board[index] == 'O')
+       index.between?(0, 8) && !(position_taken?(board,index))
 end
 
 #  #position_taken? method here
@@ -37,5 +37,5 @@ def turn(board)
 
   valid_move?(board,user_input)
 
-  position_taken?(board,index)
+
 end
