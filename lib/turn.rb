@@ -29,11 +29,11 @@ end
 
 #turn
 def turn(board)
-  puts "Welcome to Tic Tac Toe"
+  #puts "Welcome to Tic Tac Toe"
 
-  display_board(board)
+  #display_board(board)
 
-  puts "Please enter 1-9:"
+  #puts "Please enter 1-9:"
 
   user_input = gets.strip
 
