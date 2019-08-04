@@ -35,7 +35,7 @@ def turn(board)
 
   input_to_index(user_input)
 
-  valid_move(board,user_input)
+  valid_move?(board,user_input)
 
-  position_taken(board,index)
+  position_taken?(board,index)
 end
