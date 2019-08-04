@@ -1,5 +1,4 @@
 #display_board
-board = [" "," "," "," "," "," "," "," "," ",]
 
 def display_board (board)
 puts " #{board[0]} | #{board[1]} | #{board[2]} "
@@ -29,9 +28,6 @@ end
 
 #turn
 def turn(board)
-  #puts "Welcome to Tic Tac Toe"
-
-  #display_board(board)
 
   puts "Please enter 1-9:"
 
@@ -39,4 +35,7 @@ def turn(board)
 
   input_to_index(user_input)
 
+  valid_move(board,user_input)
+
+  position_taken(board,index)
 end
